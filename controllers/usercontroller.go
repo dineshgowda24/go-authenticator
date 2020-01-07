@@ -7,8 +7,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/dineshgowda24/go-authenticator/dbutils"
-	"github.com/dineshgowda24/go-authenticator/models"
+	"go-authenticator/dbutils"
+	"go-authenticator/models"
 
 	"golang.org/x/crypto/bcrypt"
 )

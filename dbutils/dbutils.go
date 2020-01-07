@@ -5,7 +5,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/dineshgowda24/go-authenticator/models"
+	"go-authenticator/models"
 
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql" //Gorm mysql dialect interface

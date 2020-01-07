@@ -6,7 +6,8 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/dineshgowda24/go-authenticator/routes"
+	"go-authenticator/routes"
+
 	"github.com/joho/godotenv"
 )
 

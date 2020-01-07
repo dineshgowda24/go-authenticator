@@ -2,7 +2,8 @@
 package routes
 
 import (
-	"github.com/dineshgowda24/go-authenticator/controllers"
+	"go-authenticator/controllers"
+
 	"github.com/gorilla/mux"
 )
 
