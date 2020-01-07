@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/signuporlogin.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <div class="form-wrap">
+    {{.}}
+		<div class="tabs">
+			<h3 class="signup-tab"><a class="active" href="#signup-tab-content">Sign Up</a></h3>
+			<h3 class="login-tab"><a href="#login-tab-content">Login</a></h3>
+		</div><!--.tabs-->
+
+		<div class="tabs-content">
+			<div id="signup-tab-content" class="active">
+				<form class="signup-form" action="/accounts/signup" method="post">
+					<input type="email" class="input" id="user_email" name="user_email" required autocomplete="off" placeholder="Email">
+					<input type="text" class="input" id="user_fname" name="user_fname"  required autocomplete="off" placeholder="FirstName">
+          <input type="text" class="input" id="user_lname" name="user_lname" required autocomplete="off" placeholder="LastName">
+          <input type="text" class="input" id="user_pnumber" name="user_pnumber" required autocomplete="off" placeholder="Phone">
+					<input type="password" class="input" id="user_password" name="user_password" required autocomplete="off" placeholder="Password">
+					<input type="submit" class="button" value="Sign Up">
+				</form><!--.login-form-->
+				<div class="help-text">
+					<p>By signing up, you agree to our</p>
+					<p><a href="#">Terms of service</a></p>
+				</div><!--.help-text-->
+			</div><!--.signup-tab-content-->
+
+			<div id="login-tab-content">
+				<form class="login-form" action="/accounts/login" method="post">
+					<input type="text" class="input" id="user_login" name="user_email" required autocomplete="off" placeholder="Email">
+					<input type="password" class="input" id="user_pass" name="user_pass" required autocomplete="off" placeholder="Password">
+					<input type="submit" class="button" value="Login">
+				</form><!--.login-form-->
+			</div><!--.login-tab-content-->
+		</div><!--.tabs-content-->
+	</div><!--.form-wrap-->
+  <script src="/static/jss/signuporlogin.js"></script>
+  </body>
+</html>
