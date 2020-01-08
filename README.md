@@ -32,6 +32,19 @@ Go just needs the database to be created and all the migrations are handled by `
 
 ## Installing Dependencies
 
+* Setting up GO Environment
+
+```bash
+wget https://dl.google.com/go/go1.13.5.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.13.5.linux-amd64.tar.gz
+export GOROOT=/usr/local/go
+mkdir -p ~/go
+mkdir -p ~/go/src
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+```
+You can add these in ~/.profile so that they get set for every session
+
 ## 
 
 After cloning the project. `cd project`. Then just run the below command.
