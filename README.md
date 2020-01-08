@@ -5,7 +5,7 @@ The app also does a session management upon login. The session are valid for 10 
 
 ## Why GO?
 
-## Prequits 
+## Prerequisites 
 
 In order for Go Authenticator to work it needs
   * MYSQL - MYSQL server install and running.
