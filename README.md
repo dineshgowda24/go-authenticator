@@ -43,14 +43,44 @@ mkdir -p ~/go/src
 export GOPATH=$HOME/go
 export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 ```
-You can add these in ~/.profile so that they get set for every session
+You can add these exports in `~/.profile` so that they get set for every session. Run `go version` to check if GO is installed.
 
-## 
+* Installing dep
 
-After cloning the project. `cd project`. Then just run the below command.
+```bash
+sudo apt-get install go-dep
+```
+Run `dep version` to check if dep is installed.
+
+* Cloning the app
+
+```bash
+cd ~/go/src
+git clone <go-authenticator-clone-path>
+```
+
+Make sure the project is cloned only inside `~/go/src` as this is the workspace for GO.
+
+* Installing dependent packages
+
+```bash
+cd ~/go/src/go-authenticator
+dep ensure
+```
+`dep ensure` installs all the dependent packages for the app.
+
+## Running the application
 
 ```go
+cd ~/go/src/go-authenticator
 go run main.go
+```
+After this you should get an output like this
+
+```bash
+Successfully connected to datastore at! localhost:3306
+<nil>
+2020/01/08 10:53:41 Server started and is listening on port '8080'
 ```
 
 ## License
