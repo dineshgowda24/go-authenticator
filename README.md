@@ -8,9 +8,9 @@ The app also does a session management upon login. The session are valid for 10 
 ## Prequits 
 
 In order for Go Authenticator to work it needs
-  * [MYSQL] - MYSQL server install and running.
-  * [GO] - GO support packages.
-  * [dep] - dep is depenedency management for GO.
+  * MYSQL - MYSQL server install and running.
+  * GO - GO support packages.
+  * dep - dep is depenedency management for GO.
   
 ## Packages Used
 
@@ -30,7 +30,9 @@ All the database and ports related configuration are present in `.env` file. Mak
 
 Go just needs the database to be created and all the migrations are handled by `gorm` package without needing to run any scripts.
 
-## Starting Web Server
+## Installing Dependencies
+
+## 
 
 After cloning the project. `cd project`. Then just run the below command.
 
