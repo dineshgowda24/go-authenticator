@@ -3,7 +3,10 @@
 Go Authenticator is http app written in GO. The app rigisters a user into the datastore and allows signing into to the app.
 The app also does a session management upon login. The session are valid for 10 minutes. Upon login users are redirected to home page.
 
-## Why GO?
+## Architecture
+
+The web app provides a login and sign up interface. Once signed up, a user can login into the application. If the login is successful the session cookie `session_x_value` is set in browser and also in datastore and the then user is redirected to home page. The session cookie is valid for 10 minutes, this allows user to auto login.
+If a user logouts then all the session info is expired in browser and in datastore.
 
 ## Prerequisites 
 
@@ -82,6 +85,7 @@ Successfully connected to datastore at! localhost:3306
 <nil>
 2020/01/08 10:53:41 Server started and is listening on port '8080'
 ```
+Now the app is up and running. Hit the web browser with ip:port to access the app.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
