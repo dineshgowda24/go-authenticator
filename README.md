@@ -74,7 +74,7 @@ dep ensure
 
 ## Running the application
 
-```go
+```bash
 cd ~/go/src/go-authenticator
 go run main.go
 ```
